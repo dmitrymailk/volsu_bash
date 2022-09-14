@@ -7,7 +7,7 @@ fi
 
 IFS=":"
 for i in $PATH; do
-	echo "Searching in $i";
+	# echo "Searching in $i";
 	# проверяем наличие файла в директории
 	if [ -x "$i/$1" ]; then
 		echo "$1 is in $i"

@@ -49,22 +49,32 @@ while getopts "n:" opt; do
 		n)	
 			pattern='s/([0-9]{2}).([0-9]{2}).([0-9]{4}),([0-9]{2}):([0-9]{2}):([0-9]{2})/\3\2\1\4\5\6/';
 			resultLines='';
-			while read -r line; do
-				# line_date=$(date -d $(sed "$pattern" <<< "$line") +%s);
-				# end_date=$(date -d $(sed "$pattern" <<< "${OPTARG}") +%s);
+			# считать только первые n строк
+			for line in $(head -n $n ~/myevents); do
 				line_date="$(echo $line | sed -E "$pattern" | cut -c 1-14)";
 				end_date="$(echo ${OPTARG} | sed -E "$pattern" | cut -c 1-14)";
 				if [[ "$line_date" -ge "$end_date" ]]; then	
 					echo $line;
 				fi
-		done < ~/myevents;
-			;;
+			done;
+
+
+		# 	while read -r line; do
+		# 		# line_date=$(date -d $(sed "$pattern" <<< "$line") +%s);
+		# 		# end_date=$(date -d $(sed "$pattern" <<< "${OPTARG}") +%s);
+		# 		line_date="$(echo $line | sed -E "$pattern" | cut -c 1-14)";
+		# 		end_date="$(echo ${OPTARG} | sed -E "$pattern" | cut -c 1-14)";
+		# 		if [[ "$line_date" -ge "$end_date" ]]; then	
+		# 			echo $line;
+		# 		fi
+		# done < ~/myevents;
+		# 	;;
 	esac
 done
 ```
 
 
-
+### доделать 2 пункнт
 
 
 
