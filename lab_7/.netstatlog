@@ -1,0 +1,95 @@
+----AAAAAAAAAAAAAAAAAAAAAAAAAA-----
+Update time: Пн 26 сен 2022 21:02:16 +03
+Ip:
+    Forwarding: 1
+    152188 total packets received
+    4 with invalid addresses
+    0 forwarded
+    0 incoming packets discarded
+    151968 incoming packets delivered
+    151896 requests sent out
+    20 outgoing packets dropped
+Icmp:
+    57 ICMP messages received
+    6 input ICMP message failed
+    ICMP input histogram:
+        destination unreachable: 57
+    52 ICMP messages sent
+    0 ICMP messages failed
+    ICMP output histogram:
+        destination unreachable: 52
+IcmpMsg:
+        InType3: 57
+        OutType3: 52
+Tcp:
+    377 active connection openings
+    197 passive connection openings
+    8 failed connection attempts
+    18 connection resets received
+    13 connections established
+    147840 segments received
+    153790 segments sent out
+    416 segments retransmitted
+    123 bad segments received
+    126 resets sent
+    InCsumErrors: 123
+Udp:
+    3429 packets received
+    40 packets to unknown port received
+    0 packet receive errors
+    2301 packets sent
+    0 receive buffer errors
+    0 send buffer errors
+    IgnoredMulti: 487
+UdpLite:
+TcpExt:
+    2 resets received for embryonic SYN_RECV sockets
+    54 TCP sockets finished time wait in fast timer
+    4932 delayed acks sent
+    6 delayed acks further delayed because of locked socket
+    Quick ack mode was activated 15 times
+    61312 packet headers predicted
+    8117 acknowledgments not containing data payload received
+    69667 predicted acknowledgments
+    TCPSackRecovery: 7
+    Detected reordering 55 times using SACK
+    TCPLostRetransmit: 260
+    7 fast retransmits
+    TCPTimeouts: 398
+    TCPLossProbes: 70
+    TCPLossProbeRecovery: 2
+    TCPSackRecoveryFail: 1
+    TCPBacklogCoalesce: 63
+    TCPDSACKOldSent: 16
+    TCPDSACKOfoSent: 2
+    TCPDSACKRecv: 8
+    32 connections reset due to unexpected data
+    11 connections reset due to early user close
+    45 connections aborted due to timeout
+    TCPDSACKIgnoredNoUndo: 5
+    TCPSackShiftFallback: 65
+    TCPRcvCoalesce: 368
+    TCPOFOQueue: 15
+    TCPOFOMerge: 2
+    TCPSpuriousRtxHostQueues: 12
+    TCPAutoCorking: 107
+    TCPWantZeroWindowAdv: 2
+    TCPSynRetrans: 36
+    TCPOrigDataSent: 92243
+    TCPHystartTrainDetect: 2
+    TCPHystartTrainCwnd: 40
+    TCPDelivered: 91953
+    TcpTimeoutRehash: 338
+    TcpDuplicateDataRehash: 3
+    TCPDSACKRecvSegs: 8
+IpExt:
+    InMcastPkts: 1373
+    OutMcastPkts: 91
+    InBcastPkts: 487
+    InOctets: 25606286
+    OutOctets: 30982031
+    InMcastOctets: 241712
+    OutMcastOctets: 9565
+    InBcastOctets: 107706
+    InNoECTPkts: 152377
+MPTcpExt:
